@@ -251,7 +251,31 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 });
 </script>
 
-            
+      </style>
+<center>
+
+<button id="downloadButton">Download certificate</button>
+</centre>
+<script>
+document.getElementById('downloadButton').addEventListener('click', function() {
+  // Replace 'your_pdf_file.pdf' with the actual path to your PDF file.
+  const pdfUrl = 'Certificate.pdf'; //Example: mydocument.pdf, /pdfs/report.pdf, https://example.com/files/document.pdf
+
+  // Create a temporary anchor element
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.download = pdfUrl.substring(pdfUrl.lastIndexOf('/')+1); // Extracts filename
+
+  // Append the link to the body
+  document.body.appendChild(link);
+
+  // Trigger the download
+  link.click();
+
+  // Remove the link from the body
+  document.body.removeChild(link);
+});
+</script>      
     
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">

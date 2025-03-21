@@ -226,7 +226,7 @@
 }
 
 </style>
-            <br>
+   
 <center>
 <h1>course complete certificate </h1>
 <button id="downloadButton">Download PDF</button>
@@ -251,32 +251,6 @@ document.getElementById('downloadButton').addEventListener('click', function() {
   document.body.removeChild(link);
 });
 </script>
-
-      </style>
-<center>
-
-<button id="downloadButton">Download certificate</button>
-</centre>
-<script>
-document.getElementById('downloadButton').addEventListener('click', function() {
-  // Replace 'your_pdf_file.pdf' with the actual path to your PDF file.
-  const pdfUrl = 'Certificate.pdf'; //Example: mydocument.pdf, /pdfs/report.pdf, https://example.com/files/document.pdf
-
-  // Create a temporary anchor element
-  const link = document.createElement('a');
-  link.href = pdfUrl;
-  link.download = pdfUrl.substring(pdfUrl.lastIndexOf('/')+1); // Extracts filename
-
-  // Append the link to the body
-  document.body.appendChild(link);
-
-  // Trigger the download
-  link.click();
-
-  // Remove the link from the body
-  document.body.removeChild(link);
-});
-</script>      
     
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -299,7 +273,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <ref="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
             <p class="footer__copy">&#169; THANK YOU
             </p>
